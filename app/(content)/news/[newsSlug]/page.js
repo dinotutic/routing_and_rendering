@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function NewsIdPage({ params }) {
   const newsSlug = params.newsSlug;
   const newsItem = DUMMY_NEWS.find((newsItem) => newsItem.id === newsSlug);
-
   if (!newsItem) {
     notFound();
   }

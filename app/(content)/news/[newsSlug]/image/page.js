@@ -6,14 +6,15 @@ export default function ImagePage({ params }) {
   const newsItem = DUMMY_NEWS.find(
     (newsItem) => newsItem.slug === newsItemSlug
   );
-
+  console.log("ayoo");
   if (!newsItem) {
     notFound();
   }
 
   return (
-    <div className="fullscreen-image">
-      <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
-    </div>
+    <h1>hay</h1>
+    // <div className="fullscreen-image">
+    //   <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
+    // </div>
   );
 }
